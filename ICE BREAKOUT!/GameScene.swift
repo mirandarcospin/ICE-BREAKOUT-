@@ -38,15 +38,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         SKAction.scale(to: 1.0, duration: 0.25)])
       
       gameOver.run(actionSequence)
-//      run(gameWon ? gameWonSound : gameOverSound)
+      run(gameWon ? gameWonSound : gameOverSound)
     }
   }
   
-//  let blipSound = SKAction.playSoundFileNamed("pongblip", waitForCompletion: false)
-//  let blipPaddleSound = SKAction.playSoundFileNamed("paddleBlip", waitForCompletion: false)
-//  let bambooBreakSound = SKAction.playSoundFileNamed("BambooBreak", waitForCompletion: false)
-//  let gameWonSound = SKAction.playSoundFileNamed("game-won", waitForCompletion: false)
-//  let gameOverSound = SKAction.playSoundFileNamed("game-over", waitForCompletion: false)
+  let blipSound = SKAction.playSoundFileNamed("pongblip", waitForCompletion: false)
+  let blipPaddleSound = SKAction.playSoundFileNamed("paddleBlip", waitForCompletion: false)
+  let iceBreakSound = SKAction.playSoundFileNamed("IceBreak", waitForCompletion: false)
+  let gameWonSound = SKAction.playSoundFileNamed("game-won", waitForCompletion: false)
+  let gameOverSound = SKAction.playSoundFileNamed("game-over", waitForCompletion: false)
 
   
   // MARK: - Setup
@@ -202,15 +202,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
           gameWon = true
         }
       }
-//      // 1.
-//      if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == BorderCategory {
-//        run(blipSound)
-//      }
-//
-//      // 2.
-//      if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == PaddleCategory {
-//        run(blipPaddleSound)
-//      }
+      // 1.
+      if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == BorderCategory {
+        run(blipSound)
+      }
+
+      // 2.
+      if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == PaddleCategory {
+        run(blipPaddleSound)
+      }
 
       
       
@@ -219,7 +219,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
   
   // MARK: - Helpers
   func breakBlock(_ node: SKNode) {
-    //run(bambooBreakSound)
+    run(iceBreakSound)
     let particles = SKEmitterNode(fileNamed: "BrokenPlatform")!
     particles.position = node.position
     particles.zPosition = 3

@@ -19,6 +19,11 @@
 		EE4FFE6823F379ED0090181B /* WaitingForTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4FFE6723F379ED0090181B /* WaitingForTap.swift */; };
 		EE4FFE6A23F379FD0090181B /* Playing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4FFE6923F379FD0090181B /* Playing.swift */; };
 		EE4FFE6C23F37A090090181B /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4FFE6B23F37A090090181B /* GameOver.swift */; };
+		EE5EF5C023F5E388009D27AA /* paddleBlip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE5EF5BE23F5E388009D27AA /* paddleBlip.mp3 */; };
+		EE5EF5C123F5E388009D27AA /* pongblip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE5EF5BF23F5E388009D27AA /* pongblip.mp3 */; };
+		EE5EF5C523F5E764009D27AA /* IceBreak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE5EF5C423F5E764009D27AA /* IceBreak.mp3 */; };
+		EE5EF5C723F5E812009D27AA /* game-won.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE5EF5C623F5E812009D27AA /* game-won.mp3 */; };
+		EE5EF5C923F5E8A4009D27AA /* game-over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE5EF5C823F5E8A4009D27AA /* game-over.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +35,17 @@
 		EE4FFE4C23F3550C0090181B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE4FFE4F23F3550C0090181B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE4FFE5123F3550C0090181B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE4FFE6023F372E70090181B /* BrokenPlatform.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = BrokenPlatform.sks; path = "../../../../Downloads/Bamboo Breakout Final 2/Bamboo Breakout/Particles/BrokenPlatform.sks"; sourceTree = "<group>"; };
-		EE4FFE6323F3738A0090181B /* BallTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = BallTrail.sks; path = "../../../../Downloads/Bamboo Breakout Final 2/Bamboo Breakout/Particles/BallTrail.sks"; sourceTree = "<group>"; };
-		EE4FFE6523F374D50090181B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = "../../../Downloads/Bamboo Breakout Final 2/Bamboo Breakout/GameScene.sks"; sourceTree = "<group>"; };
+		EE4FFE6023F372E70090181B /* BrokenPlatform.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BrokenPlatform.sks; sourceTree = "<group>"; };
+		EE4FFE6323F3738A0090181B /* BallTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BallTrail.sks; sourceTree = "<group>"; };
+		EE4FFE6523F374D50090181B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = "../../Downloads/Bamboo Breakout Final 2/Bamboo Breakout/GameScene.sks"; sourceTree = SOURCE_ROOT; };
 		EE4FFE6723F379ED0090181B /* WaitingForTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingForTap.swift; sourceTree = "<group>"; };
 		EE4FFE6923F379FD0090181B /* Playing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playing.swift; sourceTree = "<group>"; };
 		EE4FFE6B23F37A090090181B /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
+		EE5EF5BE23F5E388009D27AA /* paddleBlip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = paddleBlip.mp3; sourceTree = "<group>"; };
+		EE5EF5BF23F5E388009D27AA /* pongblip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pongblip.mp3; sourceTree = "<group>"; };
+		EE5EF5C423F5E764009D27AA /* IceBreak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = IceBreak.mp3; sourceTree = "<group>"; };
+		EE5EF5C623F5E812009D27AA /* game-won.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "game-won.mp3"; sourceTree = "<group>"; };
+		EE5EF5C823F5E8A4009D27AA /* game-over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "game-over.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,11 @@
 		EE4FFE5923F355590090181B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				EE5EF5C823F5E8A4009D27AA /* game-over.mp3 */,
+				EE5EF5C623F5E812009D27AA /* game-won.mp3 */,
+				EE5EF5C423F5E764009D27AA /* IceBreak.mp3 */,
+				EE5EF5BE23F5E388009D27AA /* paddleBlip.mp3 */,
+				EE5EF5BF23F5E388009D27AA /* pongblip.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -167,11 +182,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5EF5C023F5E388009D27AA /* paddleBlip.mp3 in Resources */,
 				EE4FFE4B23F3550A0090181B /* Main.storyboard in Resources */,
 				EE4FFE6223F372E70090181B /* BrokenPlatform.sks in Resources */,
+				EE5EF5C723F5E812009D27AA /* game-won.mp3 in Resources */,
 				EE4FFE6423F3738A0090181B /* BallTrail.sks in Resources */,
 				EE4FFE6623F374D60090181B /* GameScene.sks in Resources */,
+				EE5EF5C923F5E8A4009D27AA /* game-over.mp3 in Resources */,
+				EE5EF5C123F5E388009D27AA /* pongblip.mp3 in Resources */,
 				EE4FFE4D23F3550C0090181B /* Assets.xcassets in Resources */,
+				EE5EF5C523F5E764009D27AA /* IceBreak.mp3 in Resources */,
 				EE4FFE5023F3550C0090181B /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
